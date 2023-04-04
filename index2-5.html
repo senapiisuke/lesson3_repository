@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>if文</title>
+  <link rel="stylesheet" type="text/css" href="base2-5.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+    $(function () {
+      // ここに処理を記述
+      //クリックされたら以下が処理されるように指定する
+      $('#button').click(function () {
+        //入力値を受け取って
+        var text = $('#value').val();
+        //1が入力されてたらboxを赤にしたい
+        if (text === "1") {
+          $('#box').css('background-color', 'red');
+          //2が入力されたらboxを緑にしたい
+        } else if (text === "2") {
+          $('#box').css('background-color', 'green');
+        } else {
+          //それ以外が入力されたらboxを青にしたい
+          $('#box').css('background-color', 'blue');
+        }
+      });
+
+      
+    });
+  </script>
+</head>
+<body>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+  <div id="box">
+  </div><!-- button -->
+</body>
+</html>
