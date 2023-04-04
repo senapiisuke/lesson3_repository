@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>値の取得</title>
+  <link rel="stylesheet" type="text/css" href="base2-4.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>  <script>
+    $(function(){
+      // ここに処理を記述
+      //クリックされたら以下処理されるように指定
+      $('#button').click(function(){
+        //入力値を取得したい
+        var text = $('#value').val();
+        //入力内容をアラートで表示したい
+        alert(text);
+      });
+    });
+  </script>
+</head>
+<body>
+  <input type="text" id="value">
+  <input type="button" id="button" value="ボタン">
+</body>
+</html>
